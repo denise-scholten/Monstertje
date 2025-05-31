@@ -1,0 +1,114 @@
+
+body{
+     margin-left: 2em;
+     background-color: #fffdd0;
+     list-style-type: none;
+     position: relative
+}
+header{
+     display: flex;
+     justify-content: center;
+}
+
+main{
+     display: flex;
+     flex-direction: row;
+}
+
+ul{
+     list-style-type: none;
+}
+
+.scene1{
+     margin-left: 4em;
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr;
+
+     place-items: center;
+}
+
+#achtergrond{
+     grid-area: 1/1;
+     z-index: 1;
+     margin-left: 2em;
+     }
+
+.knoppen button{
+     background-color: #f3bb6c;
+     border-radius: 0.5em;
+     border-color: orange;
+     border-width: 0.20em;
+     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+     font-size: 1.5em;
+}
+
+/* outfitjes  */
+
+#hertje, #kikker, #konijntje, #tovenaar{
+grid-area: 1/1;
+z-index: 2;
+margin-left: 2em;
+}
+
+
+#strikje, #bloempje, #cape, #toverstaf {
+grid-area: 1/1;
+z-index: 3;
+margin-left: 2em;
+}
+
+
+
+#monstertje, #eendje, #uiltje, #kikkertje {
+     grid-area: 1/1;
+     z-index: 5; 
+     margin-left: 2em;
+}
+
+#halo, #plantje {
+     grid-area: 1/1;
+     z-index: 6;
+     margin-left: 2em;
+}
+
+
+#hartjes, #sterretjes {
+     grid-area: 1/1;
+     z-index: 7;
+     margin-left: 2em;
+}
+
+
+.verborgen{
+    opacity: 0%; 
+    pointer-events: none;
+    transition: opacitiy 0.3s ease;
+}
+
+.getal{
+     display: flex;
+     flex-direction: column;
+}
+
+p{
+     margin-left: 4em;
+     font-size: 3em;
+}
+
+.finished{
+     position:absolute;
+     right: 4em;
+     bottom: 0;
+     margin-bottom: 4.5em;
+}
+
+.finished button {
+     background-color: #c0e28c;
+     border-radius: 0.5em;
+     border-width: 0.25em;
+     border-color: #9fc48f;
+     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    
+     font-size: 2em;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Little Monster Dress-Up</title>
+</head>
+<body id="bd">
+    <header>
+        <h1>Create your own Little Monster!</h1>
+    </header>
+
+    <main> 
+        <ul class="knoppen">
+
+            <li class="getal">
+                <p id ="mijnLabel">0</p>
+                <button id="nummerKnop">Aantal keer kiezen</button>
+                <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+            </li>
+
+            <li class="outfit">
+                <h2>Outfitje</h2>
+                <button id="hertjeKnop" data-outfit="hertje">Hertje</button>
+                <button id="kikkerKnop" data-outfit="kikker">Kikker</button>
+                <button id="konijntjeKnop" data-outfit="konijntje">Konijntje</button>
+                <button id="tovenaarKnop" data-outfit="tovenaar">Tovenaar</button>
+          
+            </li>
+
+            <li class="accessoires">
+                <h2>Accessoires</h2>
+                <button id="strikjeKnop" data-sieraden="strikje">Strikje</button>
+                <button id="bloempjeKnop" data-sieraden="bloempje">Bloempje</button>
+                <button id="capeKnop" data-sieraden="cape">Cape</button>
+                <button id="toverstafKnop" data-sieraden="toverstaf">Toverstaf</button>
+            </li>
+
+            <li class="buddy">
+                <h2>Buddy</h2>
+                <button id="monsterKnop" data-diertje="monstertje">Monstertje</button>
+                <button id="eendKnop" data-diertje="eendje">Eendje</button>
+                <button id="uilKnop" data-diertje="uiltje">Uiltje</button>
+                <button id="kikkertjeKnop" data-diertje="kikkertje">Kikkertje</button>
+            </li>
+
+            <li class="hoedjes">
+                <h2>Hoedjes</h2>
+                <button id="haloKnop" data-hoed="halo">Halo</button>
+                <button id="plantKnop" data-hoed="plantje">Plantje</button>
+            </li>
+
+            <li class="effects">
+                <h2>Effecten </h2>
+                <button id="hartjeKnop" data-effect="hartjes" >Hartjes</button>
+                <button id="sterKnop" data-effect="sterretjes">Sterretjes</button>
+            </li>
+        </ul>
+
+          <div class ="finished">
+                <button id="done">I'm done!</button>
+          </div>
+
+        <section class="scene1">
+            <img id="achtergrond" src="images/achtergrond.png" alt="achtergrond">
+
+            <img id="hertje" src="images/hertje.png" alt="Hertje" class="verborgen">
+            <img id="kikker" src="images/kikker.png" alt="Kikker" class="verborgen">
+            <img id="konijntje" src="images/konijn.png" alt="Konijntje" class="verborgen">
+            <img id="tovenaar" src="images/tovenaar.png" alt="Tovenaar" class="verborgen">
+
+            <img id="strikje" src="images/strikje.png" alt="Strikje" class="verborgen">
+            <img id="bloempje" src="images/bloempje.png" alt="Bloempje" class="verborgen">
+            <img id="cape" src="images/cape.png" alt="Cape" class="verborgen">
+            <img id="toverstaf" src="images/toverstaf.png" alt="toverstaf" class="verborgen">
+
+            <img id="monstertje" src="images/monstertje.png" alt="Monstertje" class="verborgen">
+            <img id="eendje" src="images/eendje.png" alt="Eendje" class="verborgen">
+            <img id="uiltje" src="images/uiltje.png" alt="Uiltje" class="verborgen">
+            <img id="kikkertje" src="images/kikkertje.png" alt="Kikkertje" class="verborgen">
+
+            <img id="halo" src="images/halo.png" alt="Halo" class="verborgen">
+            <img id="plantje" src="images/plantje.png" alt="Plantje" class="verborgen">
+
+            <img id="hartjes" src="images/hartje.png" alt="Hartjes" class="verborgen">
+            <img id="sterretjes" src="images/sterretje.png" alt="Sterretjes" class="verborgen">
+        </section>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>
